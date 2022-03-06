@@ -1,17 +1,8 @@
 import java.util.Scanner;
 
-/*
- * A mediana de uma lista de números é basicamente o elemento que se encontra no meio da lista após a ordenação.
- * Dada uma lista de números com um número ímpar de elementos, desenvolva um algoritmo que encontre a mediana.
- * Exemplo:
- * 
- * Entrada:
- * arr = [9, 2, 1, 4, 6]
- * 
- * Saída:
- * 4
- * 
- * 
+/**
+ * Questão 1 Desafio de programação CAPGEMINI 02.
+ * @author Antonio Janes
  */
 
 public class Questao01 {
@@ -19,13 +10,12 @@ public class Questao01 {
 		Scanner entrada = new Scanner (System.in);
 		int n, meio, x = 0;
 		float valores[], aux;
-		
-		
+	
 		do {
-	         System.out.print ("Quantos valores deseja informar? (Apenas números impares)");
+	         System.out.println ("Quantos valores deseja informar? (Apenas números impares)");
 	         n = entrada.nextInt();
 	         if(n%2==0) {
-	        	 System.out.print ("Por favor, digite um número impar\n");
+	        	 System.out.println ("Por favor, digite um número impar\n");
 	        	 n=0;
 	         }
 	    } while (n <= 0);
@@ -50,10 +40,6 @@ public class Questao01 {
 	    }while(x!=0);
 	    
 	    meio=(int)valores.length/2;
-	    
-	    for (int i = 0; i < valores.length; i++) {
-	    	 System.out.print ("Posição"+i+" ="+valores[i]+".");
-	    }
 	    
 	    System.out.print ("\nA mediana dos números informados é "+valores[meio]+".");
 	}

@@ -1,22 +1,9 @@
 import java.util.Scanner;
 
-/*
- * Dado um vetor de inteiros n e um inteiro qualquer x. 
- * Construa um algoritmo que determine o número de elementos pares do vetor que tem uma diferença igual ao valor de x.
- * 
- * Exemplo:
- * 
- * Entrada:
- * n = [1, 5, 3, 4, 2]
- * 
- * Saída:
- * 3
- * 
- * Explicação:
- * Existem 3 pares de inteiros no vetor com uma diferença de 2: [5, 3], [4, 2] e [3, 1].
- * 
+/**
+ * Questão 2 Desafio de programação CAPGEMINI 02.
+ * @author Antonio Janes
  */
-
 
 public class Questao02 {
 	public static void main(String args[]) {
@@ -46,10 +33,9 @@ public class Questao02 {
 	    	for(int j = 0; j < n.length; j++) {
 	    		if(n[i]-n[j]==x) {
 	    			cont++;
-	    			System.out.print ("["+n[i]+", "+n[j]+"], ");
 	    		}
 	    	}
 	    }
-	    System.out.print ("existem "+cont+" pares de inteiros no vetor com uma diferença de "+x+".");
+	    System.out.print ("\n2"+cont);
 	}
 }
